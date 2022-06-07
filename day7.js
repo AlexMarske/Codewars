@@ -2,11 +2,11 @@
 
 // So given a string "super", we should return a list of [2, 4].
 
-function vowelIndices(word) {
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+function vowelIndices(word){
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
   let sol = []
-  for (let i = 0; i < word.length; i++) {
-    if (vowels.includes(word[i])) {
+  for(let i = 0; i < word.length; i++){
+    if(vowels.includes(word[i])){
       sol.push(i + 1)
     }
   }
